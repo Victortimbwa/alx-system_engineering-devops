@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#a Bash script that displays all active IPv4 IPs.
+
+hostname -I | awk '{for (i=1; i<=NF; i++) if ($i ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) print $i}'
