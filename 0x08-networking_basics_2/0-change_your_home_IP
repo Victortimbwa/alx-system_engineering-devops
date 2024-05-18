@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script configures the hosts file on an Ubuntu server.
+
+sudo cp /etc/hosts.backup /etc/hosts
+
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
