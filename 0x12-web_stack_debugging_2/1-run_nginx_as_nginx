@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Stop Nginx service
+sudo service nginx stop
+
+# Edit Nginx configuration to run as nginx user and listen on port 8080
+# Example: sed -i 's/user root;/user nginx;/' /etc/nginx/nginx.conf
+# Example: sed -i 's/listen 80;/listen 8080;/g' /etc/nginx/sites-available/default
+
+# Restart Nginx service
+sudo service nginx start
