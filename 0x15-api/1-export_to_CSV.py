@@ -26,3 +26,4 @@ if __name__ == "__main__":
 
         with open('{}.csv'.format(user_id), 'w') as csvf:
             csvf.write('\n'.join(csv_data))
+            
