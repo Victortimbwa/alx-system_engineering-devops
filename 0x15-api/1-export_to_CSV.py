@@ -25,4 +25,4 @@ if __name__ == "__main__":
             todo.get('title')) for todo in todos]
 
         with open('{}.csv'.format(user_id), 'w') as csvf:
-            csvf.write('\n'.join(csv_data))            
+            csvf.write('\n'.join(csv_data))

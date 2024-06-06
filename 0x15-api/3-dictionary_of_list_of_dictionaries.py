@@ -26,4 +26,4 @@ if __name__ == "__main__":
                 "username": u.get("username")
             } for t in requests.get(todos_url,
                                     params={"userId": u.get("id")}).json()]
-            for u in users}, jsonf)        
+            for u in users}, jsonf)

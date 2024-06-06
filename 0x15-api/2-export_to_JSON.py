@@ -28,4 +28,4 @@ if __name__ == "__main__":
                 for todo in todos]
 
         with open('{}.json'.format(user_id), 'w') as jsonf:
-            json.dump({user_id: json_data}, jsonf)            
+            json.dump({user_id: json_data}, jsonf)
